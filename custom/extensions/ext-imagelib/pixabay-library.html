@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+  <meta name='description' content='Pixabay Images Library.'>
+  <title>Pixabay Images Library</title>
+  <link rel='shortcut icon' href='../../../images/logo1.svg'/>
+  <link rel='stylesheet' href='./pixabay-library.css'/>
+</head>
+<body id='body-content' class='dark'>
+<div class='gallery-container'>
+  <div id='loading'></div>
+  <div id='gallery-head'>
+    <div class='search-box'>
+      <button id='search-button' title='Search submit'>
+        <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'>
+          <path d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/>
+        </svg>
+      </button>
+      <label>
+        <input id='search-input' class='search-input' type='text' value='' maxlength='100' spellcheck='false' autocomplete='off' placeholder='Search vectors, images, ...'/>
+      </label>
+      <button id='search-filter-btn' class='search-filter-btn'>
+        <p class='search-filter-name'>vector</p>
+      </button>
+      <ul class='search-filter-item'>
+        <li>all</li>
+        <li>photo</li>
+        <li>vector</li>
+        <li>illustration</li>
+      </ul>
+      <input id='search-submit' class='search-submit' type='submit' value='Search'/>
+    </div>
+    <div class='layout-view'>
+      <svg id='grid' width='20' height='20' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z'/>
+      </svg>
+      <svg id='column' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'>
+        <rect x='3' y='3' width='7' height='7'></rect>
+        <rect x='14' y='3' width='7' height='7'></rect>
+        <rect x='14' y='14' width='7' height='7'></rect>
+        <rect x='3' y='14' width='7' height='7'></rect>
+      </svg>
+    </div>
+  </div>
+  <div id='gallery-body'></div>
+  <div id='gallery-footer' class='gallery-footer hidden'>
+    <div>
+      <button id='btnPrev' title='Previous'>
+        <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'>
+          <path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/>
+        </svg>
+      </button>
+    </div>
+    <div><span id='page-indicator'></span></div>
+    <div>
+      <button id='btnNext' title='Next'>
+        <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'>
+          <path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+<script type='module'>
+  import {ImageLib} from './pixabay-library.js';
+  const imageLib = new ImageLib();
+  imageLib.init({view: 'grid'});
+</script>
+</body>
+</html>

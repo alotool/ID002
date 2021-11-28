@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+  <meta name='description' content='Images Library.'>
+  <title>Images Library</title>
+  <link rel='shortcut icon' href='../../../images/logo1.svg'/>
+  <link rel='stylesheet' href='./library.css'/>
+</head>
+<body id='body-content' class='dark'>
+<div id='loading'></div>
+<div class='container'>
+  <div class='sidebar'>
+    <a class='active' data-category='symbols' title='Symbols'><svg><use xlink:href='./library.svg#symbols'></use></svg></a>
+    <a data-category='avatars' title='Avatars'><svg><use xlink:href='./library.svg#avatars'></use></svg></a>
+    <a data-category='business' title='Business'><svg><use xlink:href='./library.svg#business'></use></svg></a>
+    <a data-category='technology' title='Technology'><svg><use xlink:href='./library.svg#technology'></use></svg></a>
+    <a data-category='food_and_drink' title='Food and drink'><svg><use xlink:href='./library.svg#food_and_drink'></use></svg></a>
+    <a data-category='animals_and_nature' title='Animals and nature'><svg><use xlink:href='./library.svg#animals_and_nature'></use></svg></a>
+    <a data-category='travel_and_places' title='Travel and places'><svg><use xlink:href='./library.svg#travel_and_places'></use></svg></a>
+    <a data-category='objects' title='Objects'><svg><use xlink:href='./library.svg#objects'></use></svg></a>
+    <a data-category='marketing' title='Marketing'><svg><use xlink:href='./library.svg#marketing'></use></svg></a>
+  </div>
+  <div id='gallery' class='main'></div>
+</div>
+<script type='module'>
+  import {Library} from './library.js';
+  const library = new Library();
+  library.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>Editor</title>
+<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.css'/>
+<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/theme/dracula.min.css'/>
+<link href='../../custom.css' rel='stylesheet'/>
+<style>
+.CodeMirror {width: 100%;height: calc(100vh - 30px);}
+.CodeMirror-sizer {margin-left: 30px !important;}
+.CodeMirror-gutter {width: 29px !important;}
+.cm-s-dracula.CodeMirror {background-color: #1e2329 !important;}
+.cm-s-dracula .CodeMirror-gutter {background-color: #262c33;border-right: 1px solid #2c323b;}
+.cm-s-dracula span.cm-meta {color: #9f9e80;font-style: italic;}
+.cm-s-dracula span.cm-tag {color: #d97e9b;}
+.cm-s-dracula span.cm-attribute {color: #3bbcd3;}
+.cm-s-dracula span.cm-string, .cm-s-dracula span.cm-string-2 {color: #86af61;}
+</style>
+<script src='//cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/addon/edit/matchbrackets.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/addon/selection/active-line.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/addon/display/placeholder.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/xml/xml.min.js'></script>
+<script src='//cdn.jsdelivr.net/gh/alotool/lib@main/plugins/vkbeautify/dist/vkbeautify.min.js'></script>
+</head>
+<body>
+<textarea id='editor' class='editor' placeholder=''></textarea>
+<script type='module'>
+import {ExtCodeEditor} from './ext-code-editor.js';
+const extCodeEditor = new ExtCodeEditor();
+extCodeEditor.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<svg width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m0.12852,8.18338c3.59931,-7.71208 13.19749,-7.36932 16.75236,0.08569c-3.02165,7.5407 -13.59741,7.66924 -16.75236,-0.08569z" fill="#e0dfde" id="svg_9"/>
+  <path d="m0.33033,8.2557c3.5173,-4.97159 12.89675,-4.75063 16.37062,0.05524c-2.95279,4.86111 -13.28756,4.94397 -16.37062,-0.05524z" fill="#ffffff" id="svg_76"/>
+  <circle cx="8.45861" cy="7.71116" fill="#cccccc" id="svg_88" r="3.08008"/>
+  <circle cx="8.43159" cy="7.6539" fill="#b2b2b2" id="svg_89" r="1.27539"/>
+  <path d="m-1.014816,7.364796l18.434986,0l0,1.648033l-18.434986,0z" fill="#cc5555" id="svg_1" stroke-linecap="round" stroke-linejoin="bevel" transform="rotate(-49.4072 8.20268 8.18881)"/>
+ </g>
+</svg>

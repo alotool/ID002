@@ -1,0 +1,17 @@
+{
+  "lib": [
+    "basic",
+    "arrow",
+    "symbol",
+    "electronics",
+    "flowchart",
+    "animal",
+    "game",
+    "math",
+    "misc",
+    "music",
+    "object",
+    "raphael",
+    "dialog_balloon"
+  ]
+}
